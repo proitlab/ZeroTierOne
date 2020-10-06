@@ -9,7 +9,7 @@ ifeq ($(origin CXX),default)
         CXX:=$(shell if [ -e /opt/rh/devtoolset-8/root/usr/bin/g++ ]; then echo /opt/rh/devtoolset-8/root/usr/bin/g++; else echo $(CXX); fi)
 endif
 
-INCLUDES?=
+INCLUDES?=/usr/include/postgresql
 DEFS?=
 LDLIBS?=
 DESTDIR?=
